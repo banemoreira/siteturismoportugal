@@ -36,6 +36,38 @@
             margin-top: 20px;
             text-align: justify;
         }
+
+        @media screen and (max-width: 990px) {
+            .nav-item-collapse {
+                background-color: #cc2d18;
+                width: 100%;
+                text-align: center;
+                transition: background-color 0.3s ease;
+            }
+
+            .nav-item-collapse:hover {
+                background-color: black;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .nav-item-collapse-i {
+                visibility: hidden;
+            }
+
+            .row img {
+                width: 100%;
+                height: auto;
+            }
+
+            .texto {
+                font-size: 1.2rem;
+            }
+
+            .bg-image {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('ImagensPortugal/bg.jpg');
+            }
+        }
     </style>
 </head>
 
@@ -45,57 +77,56 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
             <div class="container">
                 <a class="navbar-brand" href="#!"><img class="logo" src="ImagensPortugal/TurismodePortugal.png"
-                        alt="Imagem TurismodePortugal" /></a>
-                <button class="navbar-toggler" type="button" data-mdb-collapse-init
-                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        alt="Imagem Turismo de Portugals"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto" style="padding-left: 10rem;">
-                        <li class="nav-item">
+                        <li class="nav-item nav-item-collapse">
                             <a class="nav-link" style="color: #fff;" onMouseOver="this.style.color='#cc2d18'"
                                 onMouseOut="this.style.color='#fff'" href="index.html">Portugal</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-item-collapse">
                             <a class="nav-link" style="color: #fff;" onMouseOver="this.style.color='#cc2d18'"
                                 onMouseOut="this.style.color='#fff'" href="castelos.html">Castelos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-item-collapse">
                             <a class="nav-link" style="color: #fff;" onMouseOver="this.style.color='#cc2d18'"
                                 onMouseOut="this.style.color='#fff'" href="mosteiros.html">Mosteiros</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-item-collapse">
                             <a class="nav-link" style="color: #fff;" onMouseOver="this.style.color='#cc2d18'"
                                 onMouseOut="this.style.color='#fff'" href="visit-portugal.html">Visite</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-item-collapse">
                             <a class="nav-link" style="color: #fff;" onMouseOver="this.style.color='#cc2d18'"
                                 onMouseOut="this.style.color='#fff'"
-                                href="https://www.turismodeportugal.pt/pt/Paginas/homepage.aspx">Turismo de
-                                Portugal</a>
+                                href="https://www.turismodeportugal.pt/pt/Paginas/homepage.aspx">Turismo de Portugal</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-item-collapse">
                             <a class="nav-link" style="color: #fff;" onMouseOver="this.style.color='#cc2d18'"
                                 onMouseOut="this.style.color='#fff'" href="galeria.html">Galeria</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-item-collapse">
                             <a class="nav-link" style="color: #fff;" onMouseOver="this.style.color='#cc2d18'"
                                 onMouseOut="this.style.color='#fff'" href="contactos.html">Contactos</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav d-flex flex-row">
-                        <li class="nav-item me-3 me-lg-0">
+                        <li class="nav-item nav-item-collapse-i me-3 me-lg-0">
                             <a class="nav-link" href="https://www.youtube.com/turismodeportugal" title="Visite YouTube">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </li>
-                        <li class="nav-item me-3 me-lg-0">
+                        <li class="nav-item nav-item-collapse-i me-3 me-lg-0">
                             <a class="nav-link" href="https://x.com/turismoportugal" title="Visite Twitter">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
-                        <li class="nav-item me-3 me-lg-0">
+                        <li class="nav-item nav-item-collapse-i me-3 me-lg-0">
                             <a class="nav-link" href="https://www.facebook.com/TurismodePortugal"
                                 title="Visite Facebook">
                                 <i class="fab fa-facebook-f"></i>
